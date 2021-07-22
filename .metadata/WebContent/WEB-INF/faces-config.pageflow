@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16266500158760" configfile="/Practica-05-ServiciosWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/ListarClientesEmp.xhtml" id="pf16266500226531" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16266500226532 pf162667142986824 pf162667142986825 pf162667142986826" inlinks="pf16266500226535 pf16266500226536 pf16266500226537 pf16266500226538 pf16266500226539 pf162665002265310 pf162667142986824 pf162667142986825" path="/PrivadaEmp/ListarClientesEmp.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/EditarClienteEm.xhtml" id="pf162665002265311" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf16266500226537 pf16266500226538" inlinks="pf16266500226532" path="/PrivadaEmp/EditarClienteEm.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/ListarFacturas.xhtml" id="pf162665002265312" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf162665002265313 pf162665002265314" inlinks="pf162665002265314 pf162665002265315 pf162665002265316" path="/PrivadaEmp/ListarFacturas.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/EditarFactura.xhtml" id="pf162665002265317" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf162665002265315 pf16266500226535" inlinks="pf162665002265313" path="/PrivadaEmp/EditarFactura.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/Facturacion.xhtml" id="pf162665002265318" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf162665002265316 pf16266500226536" path="/PrivadaEmp/Facturacion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaEmp/RegistroClienteEmp.xhtml" id="pf162665002265319" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf16266500226539 pf162665002265310" path="/PrivadaEmp/RegistroClienteEmp.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaAdm/BodegaAdmin.xhtml" id="pf162665002265320" referenceLink="//@navigationRule.6/@navigationCase.1/@toViewId|" outlinks="pf162665002265321 pf162665002265322" inlinks="pf162665002265322" path="/PrivadaAdm/BodegaAdmin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaAdm/VerBodega.xhtml" id="pf162665002265323" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf162665002265321" path="/PrivadaAdm/VerBodega.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PrivadaAdm/IndexAdmin.xhtml" id="pf162667142986827" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf162667142986826" path="/PrivadaAdm/IndexAdmin.xhtml"/>
+  <links id="pf16266500226532" target="pf162665002265311" source="pf16266500226531" outcome="editar"/>
+  <links id="pf162665002265313" target="pf162665002265317" source="pf162665002265312" outcome="modificarF"/>
+  <links id="pf162665002265314" target="pf162665002265312" source="pf162665002265312" outcome="borrarF"/>
+  <links id="pf162665002265315" target="pf162665002265312" source="pf162665002265317" outcome="guardado"/>
+  <links id="pf16266500226535" target="pf16266500226531" source="pf162665002265317" outcome="nn"/>
+  <links id="pf162665002265316" target="pf162665002265312" source="pf162665002265318" outcome="facturaCreada"/>
+  <links id="pf16266500226536" target="pf16266500226531" source="pf162665002265318" outcome="nn"/>
+  <links id="pf16266500226537" target="pf16266500226531" source="pf162665002265311" outcome="actualizado"/>
+  <links id="pf16266500226538" target="pf16266500226531" source="pf162665002265311" outcome="nn"/>
+  <links id="pf16266500226539" target="pf16266500226531" source="pf162665002265319" outcome="clienteR"/>
+  <links id="pf162665002265310" target="pf16266500226531" source="pf162665002265319" outcome="nn"/>
+  <links id="pf162665002265321" target="pf162665002265323" source="pf162665002265320" outcome="verP"/>
+  <links id="pf162665002265322" target="pf162665002265320" source="pf162665002265320" outcome="editadoB"/>
+  <links id="pf162667142986824" target="pf16266500226531" source="pf16266500226531" outcome="actualizado"/>
+  <links id="pf162667142986825" target="pf16266500226531" source="pf16266500226531" outcome="eliminado"/>
+  <links id="pf162667142986826" target="pf162667142986827" source="pf16266500226531" outcome="admin"/>
+</pageflow:Pageflow>
